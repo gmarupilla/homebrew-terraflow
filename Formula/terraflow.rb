@@ -4,13 +4,13 @@ class Terraflow < Formula
   desc "Reproducible geospatial agricultural modeling pipeline"
   homepage "https://github.com/gmarupilla/AgroTerraFlow"
   url "https://github.com/gmarupilla/AgroTerraFlow/archive/refs/tags/v0.2.1.tar.gz"
-  sha256 "ea4be95625a3b4271f99d9473e25517502243919680d2744c1489370554200ff" # run: curl -sL <url> | shasum -a 256
+  sha256 "ea4be95625a3b4271f99d9473e25517502243919680d2744c1489370554200ff"
   license "MIT"
   head "https://github.com/gmarupilla/AgroTerraFlow.git", branch: "main"
 
+  depends_on "gdal"
+  depends_on "proj"
   depends_on "python@3.12"
-  depends_on "proj"   # required by pyproj / rasterio
-  depends_on "gdal"   # required by rasterio
 
   def install
     venv = virtualenv_create(libexec, "python3.12")
