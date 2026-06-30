@@ -3,8 +3,8 @@ class Terraflow < Formula
 
   desc "Reproducible geospatial agricultural modeling pipeline"
   homepage "https://github.com/gmarupilla/AgroTerraFlow"
-  url "https://github.com/gmarupilla/AgroTerraFlow/archive/refs/tags/v0.4.0.tar.gz"
-  sha256 "5f0dac04aab0b1b0d84ed96099913694307ba3f2f3f255f429644bf081c6125a"
+  url "https://github.com/gmarupilla/AgroTerraFlow/archive/refs/tags/v0.5.0.tar.gz"
+  sha256 "5b12e34ec0e7720c6ac4c2ce18eed16bc6abd2acaafe9f63bec50a26f7f9f247"
   license "MIT"
   head "https://github.com/gmarupilla/AgroTerraFlow.git", branch: "main"
 
